@@ -3,6 +3,7 @@
 #include <ctime> //для time
 #include <Windows.h> //для SetConsoleCP
 #include <stdlib.h> //для system("cls")
+#pragma warning (disable: 26451)
 #define exiting char choice; do { cout << "Завершить работу?\nY - Да\nN - Нет\n\n"; choice = _getwch(); if (choice != 'y' && choice != 1085 && choice != 'n' && choice != 1090) cout << "Ошибка ввода! Попробуйте ещё раз!\n"; } while (choice != 'y' && choice != 1085 && choice != 'n' && choice != 1090); switch (choice) { case 'y': case 1085: ext = 1; break; case 'n': case 1090: break; }
 using namespace std;
 int main()
